@@ -5,8 +5,7 @@ public class Fibonacci {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Introduceti N: ");
         int N = scanner.nextInt();
-
-        System.out.println("Elementul " + N + " al secventei Fibonacci este: " + fib(N));
+        System.out.println("Elementul " + N + " al secventei Fibonacci este: " + fib(N + 1));
     }
 
     public static long fib(int N) {
