@@ -23,15 +23,11 @@ public class Profesor extends Person {
         return year;
     }
 
-    public void setYear(int year) {
-        this.year = year;
-    }
-
     @Override
     public String toString() {
-        return "name: " + name + "\n" +
-                "phone number: " + phoneNumber + "\n" +
-                "email: " + email + "\n" +
+        return "name: " + getName() + "\n" +
+                "phone number: " + getPhoneNumber() + "\n" +
+                "email: " + getEmail() + "\n" +
                 "course: " + course + "\n" +
                 "year: " + year;
     }

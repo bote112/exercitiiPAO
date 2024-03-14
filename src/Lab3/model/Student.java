@@ -33,15 +33,11 @@ public class Student extends Person {
         return clazz;
     }
 
-    public void setClazz(int clazz) {
-        this.clazz = clazz;
-    }
-
     @Override
     public String toString() {
-        return "name: " + name + "\n" +
-                "phone number: " + phoneNumber + "\n" +
-                "email: " + email + "\n" +
+        return "name: " + getName() + "\n" +
+                "phone number: " + getPhoneNumber() + "\n" +
+                "email: " + getEmail() + "\n" +
                 "student number: " + studentNumber + "\n" +
                 "average mark: " + averageMark + "\n" +
                 "class: " + clazz;

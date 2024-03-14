@@ -1,9 +1,9 @@
 package Lab3.model;
 
 public class Person {
-    protected String name;
-    protected String phoneNumber;
-    protected String email;
+    private String name;
+    private String phoneNumber;
+    private String email;
 
     // Constructor, getters and setters
     public Person(String name, String phoneNumber, String email) {
