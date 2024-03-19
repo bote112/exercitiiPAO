@@ -1,4 +1,4 @@
-package Lab4;
+package Lab4.Exercitiu;
 
 public class Cerc implements Calcul {
     private double raza;
@@ -12,8 +12,4 @@ public class Cerc implements Calcul {
         return 2 * Math.PI * raza;
     }
 
-    @Override
-    public double calculeazaArie() {
-        return Math.PI * raza * raza;
-    }
 }

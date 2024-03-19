@@ -1,4 +1,4 @@
-package Lab4;
+package Lab4.Exercitiu;
 
 public class Patrulater implements Calcul {
     private double latura1;
@@ -18,14 +18,4 @@ public class Patrulater implements Calcul {
         return latura1 + latura2 + latura3 + latura4;
     }
 
-    @Override
-    public double calculeazaArie() {
-        if (latura1 == latura2 && latura2 == latura3 && latura3 == latura4) {
-            return latura1 * latura1;
-        }
-        if (latura1 == latura3 && latura2 == latura4) {
-            return latura1 * latura2;
-        }
-        return -1;
-    }
 }

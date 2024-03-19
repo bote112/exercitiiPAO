@@ -1,7 +1,6 @@
-package Lab4;
+package Lab4.Exercitiu;
 
 public interface Calcul {
     double calculeazaPerimetru();
 
-    double calculeazaArie();
 }
