@@ -44,7 +44,6 @@ public class Tranzactie extends ConversieCalculImpl implements Cloneable {
     public String getRefNmb() {
         return refNmb;
     }
-
     public void setPayment(Payment payment) {
         this.payment = payment;
     }
@@ -56,4 +55,19 @@ public class Tranzactie extends ConversieCalculImpl implements Cloneable {
     public void setRefNmb(String refNmb) {
         this.refNmb = refNmb;
     }
+
+    @Override
+    public String toString() {
+        return "Tranzactie{" +
+                "ID=" + id +
+                ", Amount=" + amount +
+                " EUR, Currency=" + payment.getCurrency() +
+                ", User=" + payment.getUser().getName() +
+                " " + payment.getUser().getSurname() +
+                ", IBAN=" + payment.getUser().getIban() +
+                ", Purpose='" + payment.getPurpose() + '\'' +
+                ", RefNmb='" + (refNmb != null ? refNmb : "N/A") + '\'' +
+                '}';
+    }
+
 }

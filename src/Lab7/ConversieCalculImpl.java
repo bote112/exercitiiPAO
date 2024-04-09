@@ -15,7 +15,7 @@ public class ConversieCalculImpl implements ConversieCalcul {
                 cantitate = amount * 0.05;
             case EUR ->
                 cantitate = amount;
-            default:throw new IllegalArgumentException("Currency not supported for conversion: " + currency);
+            default -> throw new IllegalArgumentException("Currency not supported for conversion: " + currency);
         }
         return cantitate;
     }
